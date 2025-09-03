@@ -28,10 +28,24 @@ public class Producto {
     private Boolean estado;
 
     @ManyToOne
+<<<<<<< HEAD
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
 
     //Getters y Setters
+=======
+    @JoinColumn(name="id_categoria", insertable = false, updatable = false)
+    private Categoria categoria;
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
     public Integer getIdProducto() {
         return idProducto;
     }
@@ -87,6 +101,7 @@ public class Producto {
     public void setEstado(Boolean estado) {
         this.estado = estado;
     }
+<<<<<<< HEAD
 
     public Categoria getCategoria() {
         return categoria;
@@ -96,3 +111,6 @@ public class Producto {
         this.categoria = categoria;
     }
 }
+=======
+}
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5

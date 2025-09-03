@@ -3,13 +3,19 @@ package com.platzi.market.persistence;
 import com.platzi.market.domain.Product;
 import com.platzi.market.domain.repository.ProductRepository;
 import com.platzi.market.persistence.crud.ProductoCrudRepository;
+<<<<<<< HEAD
 import com.platzi.market.persistence.entity.Compra;
+=======
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
 import com.platzi.market.persistence.entity.Producto;
 import com.platzi.market.persistence.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+<<<<<<< HEAD
 import javax.swing.text.html.Option;
+=======
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
 import java.util.List;
 import java.util.Optional;
 
@@ -17,6 +23,10 @@ import java.util.Optional;
 public class ProductoRepository implements ProductRepository {
     @Autowired
     private ProductoCrudRepository productoCrudRepository;
+<<<<<<< HEAD
+=======
+
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
     @Autowired
     private ProductMapper mapper;
 
@@ -49,9 +59,18 @@ public class ProductoRepository implements ProductRepository {
         return mapper.toProduct(productoCrudRepository.save(producto));
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
     @Override
     public void delete(int productoId){
         productoCrudRepository.deleteById(productoId);
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5

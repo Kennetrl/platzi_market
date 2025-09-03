@@ -6,8 +6,14 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
+<<<<<<< HEAD
 @Table(name = "compras")
 public class Compra {
+=======
+@Table(name="compras")
+public class Compra {
+
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_compra")
@@ -29,8 +35,13 @@ public class Compra {
     @JoinColumn(name="id_cliente", insertable = false, updatable = false)
     private Cliente cliente;
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "compra", cascade = {CascadeType.ALL})
     private List<ComprasProducto> productos;
+=======
+    @OneToMany(mappedBy = "compra")
+    private List<ComprasProducto> producto;
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
 
     public Integer getIdCompra() {
         return idCompra;
@@ -79,6 +90,7 @@ public class Compra {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+<<<<<<< HEAD
 
     public Cliente getCliente() {
         return cliente;
@@ -95,4 +107,6 @@ public class Compra {
     public void setProductos(List<ComprasProducto> productos) {
         this.productos = productos;
     }
+=======
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
 }

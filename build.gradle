@@ -1,12 +1,19 @@
 plugins {
 	id 'java'
+<<<<<<< HEAD
 	id 'org.springframework.boot' version '3.5.5'
+=======
+	id 'org.springframework.boot' version '3.5.0'
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
 group = 'com.platzi'
 version = '0.0.1-SNAPSHOT'
+<<<<<<< HEAD
 description = 'Proyecto para crear una API con Spring'
+=======
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
 
 java {
 	toolchain {

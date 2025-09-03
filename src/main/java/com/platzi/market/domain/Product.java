@@ -1,15 +1,26 @@
 package com.platzi.market.domain;
 
 public class Product {
+<<<<<<< HEAD
     private Integer productId;
     private String name;
     private int categoryId;
     private Double price;
+=======
+    private int productId;
+    private String name;
+    private int categoryId;
+    private double price;
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
     private int stock;
     private boolean active;
     private Category category;
 
+<<<<<<< HEAD
     public Integer getProductId() {
+=======
+    public int getProductId() {
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
         return productId;
     }
 
@@ -33,11 +44,19 @@ public class Product {
         this.categoryId = categoryId;
     }
 
+<<<<<<< HEAD
     public Double getPrice() {
         return price;
     }
 
     public void setPrice(Double price) {
+=======
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
         this.price = price;
     }
 
@@ -64,4 +83,8 @@ public class Product {
     public void setCategory(Category category) {
         this.category = category;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5

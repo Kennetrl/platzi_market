@@ -72,4 +72,8 @@ public class Cliente {
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6d05479592da77f62f29fd3c26a713e82f15bb5
